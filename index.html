@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Yingyi Chen</title>
+  
+  <meta name="author" content="Xi Shen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #more {display: none;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/my_portrait.jpg">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<script>
+function LoadMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "SHOW MORE..."; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "HIDE..."; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Yingyi Chen</name> 
+              </p>
+
+              <p style="text-align:center">
+                Email: <i><u>yingyi.chen@esat.kuleuven.be</u></i> 
+              </p>
+              
+              <p>
+                I am a senior PhD student at <a href="https://www.esat.kuleuven.be/stadius/">ESAT-STADIUS</a>, <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>, Leuven, Belgium where I am advised by <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Prof. ir. Johan A.K. Suykens</a>. 
+                I am also previously advised by <a href="https://sme.cuhk.edu.cn/en/teacher/1178">Prof. Chunrong Ai</a> during my study in <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, Beijing, China.
+                I received my BS in Statistics from <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a>, Wuhan, China.
+              </p>
+              
+              <p style="text-align:center">
+              <div id="circles_container">
+                  <a href='https://github.com/yingyichen-cyy'><img class="iconImg" src="images/github.jpg" alt="Github">GitHub</a>
+                  <a href='Xi_Shen_CV.pdf'><img class="iconImg" src="images/cv.png" alt="CV">CV</a>
+                  <a href='https://scholar.google.com/citations?user=5b2jAVUAAAAJ&hl=zh-CN'><img class="iconImg" src="images/googleScholar.png" alt="Google Scholar">Google Scholar</a>
+                  
+                </div>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/chen.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chen.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+  
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <hr/>
+              <p>
+                I am interested in Machine Learning and Deep Learning. 
+              My research mainly focuses on learning with noisy labels, self-supervised learning and kernel methods in Transformers.</br>
+              <sup>*</sup> indicates equal contribution. </br>
+              <sup>+</sup> indicates corresponding author. </br>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="display: flex; justify-content: center;">
+                <img src='images/primal.jpg' width="160" >
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2305.19798">
+                <papertitle>Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation</papertitle>
+              </a>
+              </br>
+              
+              Yingyi Chen<sup>*</sup>, 
+              <a href="https://www.esat.kuleuven.be/stadius/person.php?id=2167">Qinghua Tao<sup>*</sup></a>,
+              <a href="https://www.esat.kuleuven.be/stadius/person.php?id=2312">Francesco Tonin</a>, 
+              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
+              
+              </br>
+              <em>Preprint</em>, 2023
+              </br>
+              <a href="">[Project page]</a> &nbsp;
+              <a href="https://arxiv.org/abs/2305.19798">[PDF]</a> &nbsp;
+              <a href="">[Code (GitHub)]</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="display: flex; justify-content: center;">
+                <img src='images/jigsaw.jpg' width="160" >
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yingyichen-cyy.github.io/Jigsaw-ViT/">
+                <papertitle>Jigsaw-ViT: Learning Jigsaw Puzzles in Vision Transformer</papertitle>
+              </a>
+              </br>
+              
+              Yingyi Chen<sup>+</sup>,
+              <a href="https://xishen0220.github.io/">Xi Shen<sup>+</sup></a>,
+              <a href="https://yhlleo.github.io/">Yahui Liu</a>,
+              Qinghua Tao,
+              Johan A.K. Suykens
+              </br>
+              <em>Pattern Recognition Letters</em>, 2023
+              </br>
+              <a href="https://yingyichen-cyy.github.io/Jigsaw-ViT/">[Project page]</a> &nbsp;
+              <a href="https://www.sciencedirect.com/science/article/pii/S0167865522003920">[PDF]</a> &nbsp;
+              <a href="https://github.com/yingyichen-cyy/JigsawViT">[Code (GitHub)]</a> &nbsp;
+            </td>
+            </tr>
+
+            <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="display: flex; justify-content: center;">
+                <img src='images/sortout.jpeg' width="160" >
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">
+                <papertitle>Compressing Features for Learning with Noisy Labels</papertitle>
+              </a>
+              </br>
+              
+              Yingyi Chen<sup>+</sup>,
+              <a href="http://hushell.github.io">Shell Xu Hu</a>, 
+              Xi Shen<sup>+</sup>,
+              <a href="https://sme.cuhk.edu.cn/en/teacher/1178">Chunrong Ai</a>,
+              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
+              </br>
+              <em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em>, 2022
+              </br>
+              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">[Project page]</a> &nbsp;
+              <a href="https://arxiv.org/abs/2206.13140">[PDF]</a> &nbsp;
+              <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching">[Code (GitHub)]</a> &nbsp;
+            </td>
+            </tr>
+            
+            <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="display: flex; justify-content: center;">
+                <img src='images/nested-co-teaching.jpg' width="160" >
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2021W/LLID/papers/Chen_Boosting_Co-Teaching_With_Compression_Regularization_for_Label_Noise_CVPRW_2021_paper.pdf">
+                <papertitle>Boosting Co-teaching with Compression Regularization for Label Noise</papertitle>
+              </a>
+              </br>
+              
+              Yingyi Chen,
+              Xi Shen,
+              Shell Xu Hu,
+              Johan A.K. Suykens
+              </br>
+              <em>CVPR L2ID workshop</em>, 2021
+              </br>
+              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">[Project page]</a> &nbsp;
+              <a href="https://arxiv.org/abs/2104.13766">[PDF]</a> &nbsp;
+              <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching">[Code (GitHub)]</a> &nbsp;
+              <a href="https://www.youtube.com/watch?v=y9zBDioKMM0&t=5s">[Workshop Video (7 mins)]</a>
+            </td>
+            </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:center">
+              <div style="display: flex; justify-content: center;">
+                <img src='images/krein.jpg' width="160">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://proceedings.mlr.press/v130/liu21a/liu21a.pdf">
+                <papertitle>Fast learning in reproducing kernel Krein spaces via signed measures</papertitle>
+              </a>
+              </br>
+
+              <a href="https://www.lfhsgre.org/">Fanghui Liu</a>,
+              <a href="http://www.pami.sjtu.edu.cn/en/xiaolin">Xiaolin Huang</a>,
+              Yingyi Chen,
+              Johan A.K. Suykens
+              </br>
+              <em>AISTATS</em>, 2021
+              </br>
+              <a href="http://proceedings.mlr.press/v130/liu21a.html">[PDF]</a>&nbsp;
+              <a href="https://www.lfhsgre.org/">[Code]</a>
+            </td>
+        </tr>
+    
+				
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Misc.</heading>
+              <hr/>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <h3> Teaching Assistant </h3>
+          <ul>
+          <li> 
+            <b>2019 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>  </b>&emsp;
+            Support Vector Machines: Methods and Applications [H00H3a].
+          </li>
+          <li> 
+            <b>2019 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>  </b>&emsp; 
+            Data Mining and Neural Networks [H05R4a].
+          </li>
+          <li> 
+            <b>2020 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a> </b>&emsp;
+            Daily supervisor of Master theses.
+          </li>
+          
+          </ul>
+
+          <h3> Art & Music</h3>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; I am a piano player who wants to be a painter. I am also interested in photography and turning photos into drawings. 
+          Here is my little gallery (my homepage icon is my self-portrait): 
+          <div class="container" style="text-align:center; padding:1rem">
+            <img src="images/mypaintings.jpg" alt="mypaintings.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+          </div>
+          </p>
+          
+
+          <h3> Coding</h3>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; All of my released code is maintained on my <a href="https://github.com/yingyichen-cyy">GitHub account</a>. </p>
+
+        <table><tbody>
+             <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a></p></td>
+              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true">Fork</a></p></td>
+              <td width="20%">Nested Co-teaching</td>
+
+              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/JigsawViT" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a></p></td>
+              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/JigsawViT/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true">Fork</a></p></td>
+              <td width="20%">Jigsaw-ViT</td>
+        </tbody></table>
+
+        </br>
+        </br>
+        </br>
+        
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <hr/>
+      <tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          This website takes the template from <a href="https://github.com/jonbarron/website">here</a>.
+        </font>
+
+        </p>
+        </td>
+      </tr>
+      </table>
+
+
+        
+
+          
+
+          
+
+          </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
