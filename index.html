@@ -1,303 +1,471 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html>
 
-  <title>Yingyi Chen</title>
-  
-  <meta name="author" content="Xi Shen">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    #more {display: none;}
-  </style>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>Yingyi Chen's Homepage</title>
   <link rel="icon" type="image/png" href="images/my_portrait.jpg">
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!--<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.7.5-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
+  <script defer src="font-awesome-5.9.0/js/brands.min.js"></script>
+  <script defer src="font-awesome-5.9.0/js/fontawesome.min.js"></script>
+    <style>
+      .red {
+        color: #ff0000;
+/*        color: #D70000;*/
+        font-style: normal;
+      }
+       
+      #intro {
+       margin-top: 0.2em !important;
+      }
+      
+      .content h3 {
+       margin-bottom: 1em!important;
+       margin-top: 2.5em!important;
+      }
+
+      .content figure {
+       width: 90%;
+       display: flex;
+       align-items: center;
+       overflow: hidden;
+       margin-left: auto!important;
+       margin-right: auto!important;
+      }
+      
+      .columns:not(:last-child) {
+       margin-bottom: 1.75rem!important;
+      }
+
+      #sidebar {
+        width: 80%;
+      }
+
+      /* #sidebar .menu-list a.is-active {
+        background-color: #9dd5d8;
+      } */
+
+      @media screen and (min-width: 769px), print {
+        .column.is-2_5, .column.is-2-tablet {
+          flex: none;
+          width: 20%;
+        }
+      }
+
+      .next-element-vertical-align-middle+span{
+        vertical-align: middle;
+      }
+
+      .next-element-vertical-align-text-top+span{
+        vertical-align: text-top;
+      }
+
+      .vertical-align-text{
+        vertical-align: text-bottom;
+      }
+
+      .partial-visible li:nth-child(n+20){
+        display: none;
+      }
+
+      .partial-visible .show-more:nth-child(n+21){
+        display: block!important;
+      }
+      .news-list:not(.partial-visible) .show-more{
+        display: block!important;
+      }
+</style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 </head>
 
-<script>
-function LoadMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "SHOW MORE..."; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "HIDE..."; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Yingyi Chen</name> 
-              </p>
-
-              <p style="text-align:center">
-                Email: <i><u>yingyi [dot] chen [at] esat [dot] kuleuven [dot] be</u></i> 
-              </p>
-              
-              <p>
-                I am a senior PhD student at <a href="https://www.esat.kuleuven.be/stadius/">ESAT-STADIUS</a>, <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>, Leuven, Belgium where I am advised by <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Prof. ir. Johan A.K. Suykens</a>. 
-                I am also previously advised by <a href="https://sme.cuhk.edu.cn/en/teacher/1178">Prof. Chunrong Ai</a> during my study in <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, Beijing, China.
-                I received my BS in Statistics from <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a>, Wuhan, China.
-              </p>
-              
-              <p style="text-align:center">
-              <div id="circles_container">
-                  <a href='https://github.com/yingyichen-cyy'><img class="iconImg" src="images/github.jpg" alt="Github">GitHub</a>
-                  <a href='yingyiCHEN_cv.pdf'><img class="iconImg" src="images/cv.png" alt="CV">CV</a>
-                  <a href='https://scholar.google.com/citations?user=5b2jAVUAAAAJ&hl=zh-CN'><img class="iconImg" src="images/googleScholar.png" alt="Google Scholar">Google Scholar</a>
-                  
-                </div>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/chen.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chen.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-  
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <hr/>
-              <p>
-                I am interested in Machine Learning and Deep Learning. 
-              My research mainly focuses on learning with noisy labels, self-supervised learning and kernel methods in Transformers.</br>
-              <sup>*</sup> indicates equal contribution. </br>
-              <sup>+</sup> indicates corresponding author. </br>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div style="display: flex; justify-content: center;">
-                <img src='images/primal_attention.jpg' width="160" >
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2305.19798">
-                <papertitle>Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation</papertitle>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2_5">
+          <div class="sticky">
+            <figure class="image" style="width: 13rem;max-width: 100%;">
+              <img class="is-expanded" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" id="avatar">
+            </figure>
+            <div class="content">
+              <h3 style="margin-top: 1em">Yingyi Chen</h3>
+              <h6>ESAT-STADIUS</h6>
+              <h6>KU Leuven</h6>
+              <h6>Leuven, Belgium</h6>
+            </div>
+            <!-- details -->
+            <div class="details">
+              <h3>Email:</h3>
+              <p><a href="yingyi.chen@esat.kuleuven.be">yingyi.chen[at]esat.kuleuven.be</a></p>
+            </div>
+            <!-- social network icons -->
+            <div class="social">
+              <a href="https://github.com/yingyichen-cyy" target="_blank">
+                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none"></span>
               </a>
-              </br>
-              
-              <b>Yingyi Chen<sup>*</sup></b>, 
-              <a href="https://www.esat.kuleuven.be/stadius/person.php?id=2167">Qinghua Tao<sup>*</sup></a>,
-              <a href="https://taralloc.github.io/index.html">Francesco Tonin</a>, 
-              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
-              
-              </br>
-              <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023
-              </br>
-              <a href="https://yingyichen-cyy.github.io/Primal-Attention/">[Project page]</a> &nbsp;
-              <a href="https://arxiv.org/abs/2305.19798">[PDF]</a> &nbsp;
-              <a href="https://github.com/yingyichen-cyy/PrimalAttention">[Code (GitHub)]</a>
-            </td>
-            </tr>
-
-            <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div style="display: flex; justify-content: center;">
-                <img src='images/jigsaw.jpg' width="160" >
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yingyichen-cyy.github.io/Jigsaw-ViT/">
-                <papertitle>Jigsaw-ViT: Learning Jigsaw Puzzles in Vision Transformer</papertitle>
+              <a href="https://scholar.google.com/citations?user=5b2jAVUAAAAJ&hl=zh-CN" target="_blank">
+                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none"></span>
               </a>
-              </br>
-              
-              <b>Yingyi Chen<sup>+</sup></b>,
-              <a href="https://xishen0220.github.io/">Xi Shen<sup>+</sup></a>,
-              <a href="https://yhlleo.github.io/">Yahui Liu</a>,
-              <a href="https://www.esat.kuleuven.be/stadius/person.php?id=2167">Qinghua Tao</a>,
-              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
-              </br>
-              <em>Pattern Recognition Letters (PRL)</em>, Elsevier, 2023
-              </br>
-              <a href="https://yingyichen-cyy.github.io/Jigsaw-ViT/">[Project page]</a> &nbsp;
-              <a href="https://www.sciencedirect.com/science/article/pii/S0167865522003920">[PDF]</a> &nbsp;
-              <a href="https://github.com/yingyichen-cyy/JigsawViT">[Code (GitHub)]</a> &nbsp;
-            </td>
-            </tr>
-
-            <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div style="display: flex; justify-content: center;">
-                <img src='images/sortout.jpeg' width="160" >
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">
-                <papertitle>Compressing Features for Learning with Noisy Labels</papertitle>
+              <a href="https://www.linkedin.com/in/yingyi-chen-8a037027a/" target="_blank">
+                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none"></span>
               </a>
-              </br>
-              
-              <b>Yingyi Chen<sup>+</sup></b>,
-              <a href="http://hushell.github.io">Shell Xu Hu</a>, 
-              <a href="https://xishen0220.github.io/">Xi Shen<sup>+</sup></a>,
-              <a href="https://sme.cuhk.edu.cn/en/teacher/1178">Chunrong Ai</a>,
-              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
-              </br>
-              <em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em>, IEEE, 2022
-              </br>
-              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">[Project page]</a> &nbsp;
-              <a href="https://arxiv.org/abs/2206.13140">[PDF]</a> &nbsp;
-              <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching">[Code (GitHub)]</a> &nbsp;
-            </td>
-            </tr>
-            
-            <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div style="display: flex; justify-content: center;">
-                <img src='images/nested-co-teaching.jpg' width="160" >
+<!--               <a href="https://twitter.com/YuanYuan_MIT" target="_blank">
+                <span class="fab fa-twitter fa-2x" style="display:inline; text-decoration: none"></span>
+              </a> -->
+            </div>
+
+
+            <div id="sidebar" class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#miscellaneous">Miscellaneous</a></li>
+              </ul>
+              <div class="column" style="width: 40%">
+                <script type='text/javascript' id='clstr_globe' src='//cdn.clustrmaps.com/globe.js?d=VjnfOejvIIrpggl9NSOiRcw0OJHJ0QGzEhq2kCXwP94' async></script>
               </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content/CVPR2021W/LLID/papers/Chen_Boosting_Co-Teaching_With_Compression_Regularization_for_Label_Noise_CVPRW_2021_paper.pdf">
-                <papertitle>Boosting Co-teaching with Compression Regularization for Label Noise</papertitle>
-              </a>
-              </br>
-              
-              <b>Yingyi Chen</b>,
-              <a href="https://xishen0220.github.io/">Xi Shen</a>,
-              <a href="http://hushell.github.io">Shell Xu Hu</a>,
-              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
-              </br>
-              <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) L2ID workshop</em>, 2021
-              </br>
-              <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/">[Project page]</a> &nbsp;
-              <a href="https://arxiv.org/abs/2104.13766">[PDF]</a> &nbsp;
-              <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching">[Code (GitHub)]</a> &nbsp;
-              <a href="https://www.youtube.com/watch?v=y9zBDioKMM0&t=5s">[Workshop Video (7 mins)]</a>
-            </td>
-            </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:center">
-              <div style="display: flex; justify-content: center;">
-                <img src='images/krein.jpg' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://proceedings.mlr.press/v130/liu21a/liu21a.pdf">
-                <papertitle>Fast learning in reproducing kernel Krein spaces via signed measures</papertitle>
-              </a>
-              </br>
-
-              <a href="https://www.lfhsgre.org/">Fanghui Liu</a>,
-              <a href="http://www.pami.sjtu.edu.cn/en/xiaolin">Xiaolin Huang</a>,
-              <b>Yingyi Chen</b>,
-              <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a>
-              </br>
-              <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2021
-              </br>
-              <a href="http://proceedings.mlr.press/v130/liu21a.html">[PDF]</a>&nbsp;
-              <a href="https://www.lfhsgre.org/">[Code]</a>
-            </td>
-        </tr>
-    
-				
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Misc.</heading>
-              <hr/>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <h3> Teaching Assistant </h3>
-          <ul>
-          <li> 
-            <b>2019 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>  </b>&emsp;
-            Support Vector Machines: Methods and Applications [H00H3a].
-          </li>
-          <li> 
-            <b>2019 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a>  </b>&emsp; 
-            Data Mining and Neural Networks [H05R4a].
-          </li>
-          <li> 
-            <b>2020 - Present &emsp; <a href="https://www.kuleuven.be/kuleuven">KU Leuven</a> </b>&emsp;
-            Daily supervisor of Master theses in Mathematical Engineering.
-          </li>
-          
-          </ul>
-
-          <h3> Art & Music</h3>
-          <p>&nbsp; &nbsp; &nbsp; &nbsp; I am a piano player who wants to be a painter. I am also interested in photography and turning photos into drawings. 
-          Here are some works from my digital gallery (my homepage icon is my self-portrait): 
-          <div class="container" style="text-align:center; padding:1rem">
-            <img src="images/mypaintings.jpg" alt="mypaintings.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+            </div>
           </div>
-          </p>
-          
 
-          <h3> Coding</h3>
-          <p>&nbsp; &nbsp; &nbsp; &nbsp; All of my released code is maintained on my <a href="https://github.com/yingyichen-cyy">GitHub account</a>. </p>
-
-        <table><tbody>
-             <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a></p></td>
-              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true">Fork</a></p></td>
-              <td width="20%">Nested Co-teaching</td>
-
-              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/JigsawViT" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a></p></td>
-              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/JigsawViT/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true">Fork</a></p></td>
-              <td width="20%">Jigsaw-ViT</td>
-        </tbody></table>
-
-        <table><tbody>
-              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/PrimalAttention" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a></p></td>
-              <td width="10%"><p> <a class="github-button" href="https://github.com/yingyichen-cyy/PrimalAttention/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true">Fork</a></p></td>
-              <td width="20%">Primal-Attention</td>
-              <td width="39%"><p> 
-        </tbody></table>
-
-        </br>
-        </br>
-        </br>
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <hr/>
-      <tr>
-        <td>
-        <br>
-        <p align="right"><font size="2">
-          This website takes the template from <a href="https://github.com/jonbarron/website">here</a>.
-        </font>
-
-        </p>
-        </td>
-      </tr>
-      </table>
+        </div>
+        <div class="column right-panel">
+          <div class="content">
 
 
-        
+            <!--About Me-->
+            <h3 id="intro">About Me</h3>
+            <p>I am a senior PhD student at <a href="https://www.esat.kuleuven.be/stadius/" target="_blank">STADIUS Center for Dynamical Systems, Signal Processing, and Data Analytics</a> of <a href="https://www.kuleuven.be/kuleuven/" target="_blank">KU Leuven</a>, Leuven, Belgium, advised by Prof. ir. <a href="https://www.esat.kuleuven.be/sista/members/suykens.html" target="_blank">Johan A.K. Suykens</a>.
+            Before KU Leuven, I was advised by Prof. <a href="https://sme.cuhk.edu.cn/en/teacher/1178" target="_blank">Chunrong Ai</a> during my study in <a href="https://www.ruc.edu.cn/" target="_blank">Renmin University of China</a>, Beijing, China.
+            I received my BS in Statistics from <a href="http://english.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>, Wuhan, China.
+            </p>
 
-          
+            <p>
+              My research area is in Machine Learning and Deep Learning. Specific topics include <i>kernel methods in Transformers</i>, <i>learning with noisy labels</i>, <i>self-supervised learning</i>.
+            </p>
 
-          
+            <!--News-->
+            <h3 id="news">
+              News
+            </h3>
+            <ul class="partial-visible news-list">
+              <li><span>[11/2023] I was honored to be the co-organizer of <a href="https://ai.kuleuven.be/events/leuven-ai-junior-researcher-day-2023/" target="_blank">Rethinking Transformers through Duality and New Directions Workshop</a> at Leuven.AI junior researchers day.</li>
+              <li><span>[09/2023] Our paper <a href="https://openreview.net/forum?id=bRyduWAAVT" target="_blank">"Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation"</a> has been accepted to NeurIPS 2023.</li>
+            </ul>
 
-          </tbody></table>
-      </td>
-    </tr>
-  </table>
+
+            <!--Selected Publications-->
+            <h3 id="publications">Publications <span style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .1rem;"><a href="https://scholar.google.com/citations?user=5b2jAVUAAAAJ&hl=zh-CN" target="_blank">[Full List]</a></span></h3> 
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2024_kep.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Self-Attention through Kernel-Eigen Pair Sparse Variational Gaussian Processes</b><br>
+                    <b>Yingyi Chen<sup>*</sup></b>, 
+                    <a href="https://qinghua-tao.github.io/">Qinghua Tao<sup>*</sup></a>,
+                    <a href="https://taralloc.github.io/index.html">Francesco Tonin</a>, 
+                    <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>preprint, 2024</i><br>
+                    <!-- <a href="https://yingyichen-cyy.github.io/Primal-Attention/" target="_blank">[Project Page]</a> -->
+                    <a href="" target="_blank">[arXiv]</a>
+                    <!-- <a href="https://openreview.net/forum?id=bRyduWAAVT" target="_blank">[PDF]</a> -->
+                    <!-- <a href="https://yingyichen-cyy.github.io/Primal-Attention/resrc/poster.pdf" target="_blank">[Poster]</a> -->
+                    <a href="" target="_blank">[BibTeX]</a>
+                    <!-- <a href="https://github.com/yingyichen-cyy/PrimalAttention" target="_blank" class="next-element-vertical-align-text-top">[Code (GitHub)]</a> -->
+                    <!-- <a class="github-button" href="https://github.com/yingyichen-cyy/PrimalAttention" data-icon="octicon-star" data-size="medium" data-show-count="true">Star</a>  -->
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2023_neurips_primal.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation</b><br>
+                    <b>Yingyi Chen<sup>*</sup></b>, 
+                    <a href="https://qinghua-tao.github.io/">Qinghua Tao<sup>*</sup></a>,
+                    <a href="https://taralloc.github.io/index.html">Francesco Tonin</a>, 
+                    <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2023</i><br>
+                    <a href="https://yingyichen-cyy.github.io/Primal-Attention/" target="_blank">[Project Page]</a>
+                    <a href="https://arxiv.org/abs/2305.19798" target="_blank">[arXiv]</a>
+                    <a href="https://openreview.net/forum?id=bRyduWAAVT" target="_blank">[PDF]</a>
+                    <a href="https://yingyichen-cyy.github.io/Primal-Attention/resrc/poster.pdf" target="_blank">[Poster]</a>
+                    <a href="bib/2023_neurips_primal.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/yingyichen-cyy/PrimalAttention" target="_blank" class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <a class="github-button" href="https://github.com/yingyichen-cyy/PrimalAttention" data-icon="octicon-star" data-size="medium" data-show-count="true">Star</a> <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2023_prl_jigsaw.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Jigsaw-ViT: Learning Jigsaw Puzzles in Vision Transformer</b><br>
+                      <b>Yingyi Chen</b>,
+                      <a href="https://xishen0220.github.io/">Xi Shen</a>,
+                      <a href="https://yhlleo.github.io/">Yahui Liu</a>,
+                      <a href="https://qinghua-tao.github.io/">Qinghua Tao</a>,
+                      <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>Pattern Recognition Letters (<b>PRL</b>), Elsevier, 2023</i><br>
+                    <a href="https://yingyichen-cyy.github.io/Jigsaw-ViT/" target="_blank">[Project Page]</a>
+                    <a href="https://arxiv.org/abs/2207.11971" target="_blank">[arXiv]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0167865522003920" target="_blank">[PDF]</a>
+                    <a href="bib/2023_prl_jigsaw.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/yingyichen-cyy/JigsawViT">[Code (GitHub)]</a>
+                    <a class="github-button" href="https://github.com/yingyichen-cyy/JigsawViT" data-icon="octicon-star" data-size="medium" data-show-count="true">Star</a> <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022_tnnls_nct.jpeg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Compressing Features for Learning with Noisy Labels</b><br>
+                    <b>Yingyi Chen</b>, 
+                    <a href="http://hushell.github.io">Shell Xu Hu</a>, 
+                    <a href="https://xishen0220.github.io/">Xi Shen</a>,
+                    <a href="https://sme.cuhk.edu.cn/en/teacher/1178">Chunrong Ai</a>,
+                    <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), 2022</i><br>
+                    <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/" target="_blank">[Project Page]</a>
+                    <a href="https://arxiv.org/abs/2206.13140" target="_blank">[arXiv]</a>
+                    <a href="https://ieeexplore.ieee.org/document/9819959?denied=" target="_blank">[PDF]</a>
+                    <a href="bib/2022_tnnls_nct.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching" target="_blank" class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching" data-icon="octicon-star" data-size="medium" data-show-count="true">Star</a> <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2021_cvprw_nct.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Boosting Co-teaching with Compression Regularization for Label Noise</b><br>
+                    <b>Yingyi Chen</b>, 
+                    <a href="http://hushell.github.io">Shell Xu Hu</a>, 
+                    <a href="https://xishen0220.github.io/">Xi Shen</a>,
+                    <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition L2ID Workshop (<b>CVPR@L2ID</b>), 2021</i><br>
+                    <a href="https://yingyichen-cyy.github.io/CompressFeatNoisyLabels/" target="_blank">[Project Page]</a>
+                    <a href="https://arxiv.org/abs/2104.13766" target="_blank">[arXiv]</a>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2021W/LLID/papers/Chen_Boosting_Co-Teaching_With_Compression_Regularization_for_Label_Noise_CVPRW_2021_paper.pdf" target="_blank">[PDF]</a>
+                    <a href="bib/2021_cvprw_nct.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://www.youtube.com/watch?v=y9zBDioKMM0&t=5s">[Workshop Video (7 mins)]</a>
+                    <a href="https://github.com/yingyichen-cyy/Nested-Co-teaching" target="_blank" class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <a class="github-button" href="https://github.com/yingyichen-cyy/Nested-Co-teaching" data-icon="octicon-star" data-size="medium" data-show-count="true">Star</a> <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2021_aistats_fast.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Fast Learning in Reproducing Kernel Krein Spaces via Signed Measures</b><br>
+                    <a href="https://www.lfhsgre.org/">Fanghui Liu</a>,
+                    <a href="http://www.pami.sjtu.edu.cn/en/xiaolin">Xiaolin Huang</a>,
+                    <b>Yingyi Chen</b>,
+                    <a href="https://www.esat.kuleuven.be/sista/members/suykens.html">Johan A.K. Suykens</a><br>
+                    <i>International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), 2021</i><br>
+                    <a href="https://arxiv.org/abs/2006.00247" target="_blank">[arXiv]</a>
+                    <a href="http://proceedings.mlr.press/v130/liu21a.html" target="_blank">[PDF]</a>
+                    <a href="https://www.lfhsgre.org/files/RFF_RKKS_poster.pdf" target="_blank">[Poster]</a>
+                    <a href="bib/2021_aistats_fast.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://www.lfhsgre.org/files/code-RFF_RKKS.zip">[Code]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <h3 id="miscellaneous">
+              Selected Honors and Awards
+            </h3>
+            <ul>
+              <li>Research Travel Grant, KU Leuven, 2023.</li>
+              <li>Academic Scholarship, Renmin University of China, 2017, 2018.</li>
+              <li>National Scholarship (top 0.2%, <em class="red">highest</em> honor), Ministry of Education of P.R.China, 2014.</li>
+              <li>Premium student of Qiming College (top 1%), Huazhong University of Science and Technology, 2013, 2014, 2015.</li>
+              <li>First-Class Scholarship (top 5%), Huazhong University of Science and Technology, 2012, 2013, 2015.</li>
+            </ul>
+
+
+            <h3 id="miscellaneous">
+
+            <h3 >
+              Academic Services
+            </h3>
+            <ul>
+              <li><b>Journal Reviewer</b></li>
+              IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) <br>
+              IEEE Transactions on Neural Networks and Learning Systems (TNNLS) <br>
+              Pattern Recognition Letters (PRL) <br>
+              Multimedia Systems <br>
+            </ul>
+
+
+            <h3 >
+              Teaching
+            </h3>
+            Duties at various times have included: daily supervisor of master theses, weekly computer lab exercises, assign and mark homework.
+            <ul>
+              <li><b>KU Leuven</b>, Daily supervisor of master theses in Mathematical Engineering, <i>Fall 2020</i>, <i>Fall 2021</i>, <i>Fall 2022</i>, <i>Fall 2023</i></li>
+              <li><b>KU Leuven</b>, H00H3a -- Support Vector Machines: Methods and Applications, Teaching Assistant, <i>Spring 2020</i>, <i>Spring 2021</i>, <i>Spring 2022</i>, <i>Spring 2023</i></li>
+              <li><b>KU Leuven</b>, H05R4a -- Data Mining and Neural Networks, Teaching Assistant, <i>Fall 2019</i>, <i>Fall 2020</i>, <i>Fall 2021</i>, <i>Fall 2022</i>, <i>Fall 2023</i></li>
+            </ul>
+
+            <h3> Art & Music</h3>
+            <p>I am a piano player who wants to be a painter. I am also interested in photography and turning photos into drawings. 
+            Here are some works from my digital gallery. <i>My homepage icon is my self-portrait:</i> 
+            <div class="container" style="text-align:center; padding:1rem">
+              <img src="images/mypaintings.jpg" alt="mypaintings.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container">
+      <br><hr>
+      <div class="row" style="text-align: center">
+        © 2020-2024 Yingyi Chen. Last updated: Feb 5, 2024.
+      </div>
+    </footer>
+  </section>
+
+
+  <script>
+
+    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
+
+    $('#sidebar').on('click', 'a', function(){
+      activate($(this))
+    });
+    
+    $(window).on('resize', debounce(calculateBoundary, 300));
+
+    $(document).on('scroll', debounce(judgeScroll, 300));
+
+    calculateBoundary();
+    judgeScroll();
+    
+    function  calculateBoundary() {
+      offsetList = $hashList.map(function(idx, ele){
+        return $(ele.hash).offset().top
+      });
+      maxScrollHeight = $(document).height() - $(window).height()
+    }
+    
+    function judgeScroll() {
+      var tps = $("html").scrollTop()
+              ? $("html").scrollTop()
+              : $("body").scrollTop(),
+              len = offsetList.length;
+      if(tps >= maxScrollHeight-10){
+        activate($hashList.eq(len-1));
+        return
+      }
+      for(var i=0; i<len; i++){
+       if(tps+50<offsetList[i]){
+          activate($hashList.eq(Math.max(0,i-1)));
+          return
+        }
+      }
+    }
+
+    function activate(ele){
+      $hashList.removeClass('is-active');
+      ele.addClass('is-active');
+    }
+
+    function debounce(fn, delay) {
+      var timeout = null;
+      return function () {
+        var args = arguments;
+        var context = this;
+        if (!timeout) {
+          timeout = setTimeout(function () {
+            timeout = 0;
+            return fn.apply(context, args);
+          }, delay);
+        }
+      };
+    }
+
+    var $showMoreBtn = $('.show-more');
+    $showMoreBtn.click(function(){
+      var $parent = $showMoreBtn.parent();
+      if($parent.hasClass('partial-visible')){
+        $showMoreBtn.text('hide').parent().removeClass('partial-visible');
+      }else{
+        $showMoreBtn.text('show more').parent().addClass('partial-visible');
+      }
+    })
+
+    var psbCount = 3;
+    $('#avatar').attr('src', './images/psb'+(1+(Math.random()*100>>0)%psbCount)+'.jpg')
+
+
+
+  </script>
+
+
 </body>
 
 </html>
